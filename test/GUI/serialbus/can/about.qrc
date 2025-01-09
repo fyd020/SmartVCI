@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="JiDU">
+    <file>images/jidu.png</file>
+  </qresource>
+</RCC>
