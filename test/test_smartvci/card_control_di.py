@@ -70,5 +70,5 @@ def read_di_by_signal(signal, channel=1):
     
 if __name__ == "__main__":
     # read_di_by_message(can_id=0xd114)
-    read_di_by_signal(signal="DTSDI_Channel_01_Status")
+    read_di_by_signal(signal="DTSDI_Channel_03_Status")
         

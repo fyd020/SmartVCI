@@ -74,5 +74,5 @@ def read_ai_by_signal(signal, channel=1):
     
 if __name__ == "__main__":
     # read_ai_by_message(can_id=0xa117)
-    read_ai_by_signal(signal="Group1_Channel_Voltage_Vlaue")
+    read_ai_by_signal(signal="Group2_Channel_Voltage_Vlaue")
         

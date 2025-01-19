@@ -29,19 +29,19 @@ jidutest_can使用教程
 
   + 获取jidutest-can包的特定版本：
 
-   git clone https://jidudev.com/ee/jidutest/jidutest-sdk/jidutest-can.git -b v0.1_rc10
+   git clone hhttps://github.com/fyd020/SmartVCI.git
 
   + 安装本包的依赖及其本身：
   
-   【本包使用者】pip install jidutest-can/
+   【本包使用者】pip install SmartVCI/
 
-   【本包开发者】pip install -e jidutest-can/
+   【本包开发者】pip install -e SmartVCI/
 
   + 删除下载包：
 
-   【Windows】rmdir /s jidutest-can/
+   【Windows】rmdir /s SmartVCI/
 
-   【Linux  】rm -rf jidutest-can/
+   【Linux  】rm -rf SmartVCI/
 
 - 命令行操作：
 
@@ -191,3 +191,8 @@ jidutest_can使用教程
      ├── sample_send_signals.py
 
      └── sample_send_signals_once.py
+
+Smartvci脚本执行：
+python3 test/test_smartvci/card_control_di.py  # 执行di版卡操作
+python3 test/test_smartvci/card_control_do.py  # 执行do版卡操作
+python3 test/test_smartvci/card_control_ai.py  # 执行ai版卡操作

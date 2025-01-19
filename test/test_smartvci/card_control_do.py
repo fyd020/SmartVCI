@@ -69,5 +69,7 @@ if __name__ == "__main__":
         "DTSDO_Channel_01_Output": "High",
         "DTSDO_Channel_02_Output_Enable": True, 
         "DTSDO_Channel_02_Output": "High",
+        "DTSDO_Channel_03_Output_Enable": True, 
+        "DTSDO_Channel_03_Output": "High",
     })
         
