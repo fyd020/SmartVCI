@@ -1,0 +1,167 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DTS_Tester DTS_Boards
+VAL_TABLE_ ChannelOutput 1 "High" 0 "Low" ;
+VAL_TABLE_ ChannelOutputEnable 1 "True" 0 "False" ;
+
+
+BO_ 2147536919 DTSDO_C01_B03_Control: 8 DTS_Tester
+ SG_ DTSDO_Channel_01_Output_Enable : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_01_Output : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_02_Output_Enable : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_02_Output : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_03_Output_Enable : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_03_Output : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_04_Output_Enable : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_04_Output : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_05_Output_Enable : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_05_Output : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_06_Output_Enable : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_06_Output : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_07_Output_Enable : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_07_Output : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_08_Output_Enable : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_08_Output : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_09_Output_Enable : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_09_Output : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_10_Output_Enable : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_10_Output : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_11_Output_Enable : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_11_Output : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_12_Output_Enable : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_12_Output : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_13_Output_Enable : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_13_Output : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_14_Output_Enable : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_14_Output : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_15_Output_Enable : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_15_Output : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_16_Output_Enable : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_16_Output : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_17_Output_Enable : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_17_Output : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_18_Output_Enable : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_18_Output : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_19_Output_Enable : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_19_Output : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_20_Output_Enable : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_20_Output : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_21_Output_Enable : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_21_Output : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_22_Output_Enable : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_22_Output : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_23_Output_Enable : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_23_Output : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_24_Output_Enable : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_24_Output : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_25_Output_Enable : 56|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_25_Output : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_26_Output_Enable : 57|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_26_Output : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_27_Output_Enable : 58|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_27_Output : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_28_Output_Enable : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_28_Output : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_29_Output_Enable : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_29_Output : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_30_Output_Enable : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTSDO_Channel_30_Output : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 2147536919 DTSDO_Channel_01_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_01_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_02_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_02_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_03_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_03_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_04_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_04_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_05_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_05_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_06_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_06_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_07_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_07_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_08_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_08_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_09_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_09_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_10_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_10_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_11_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_11_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_12_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_12_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_13_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_13_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_14_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_14_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_15_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_15_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_16_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_16_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_17_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_17_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_18_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_18_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_19_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_19_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_20_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_20_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_21_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_21_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_22_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_22_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_23_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_23_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_24_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_24_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_25_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_25_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_26_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_26_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_27_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_27_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_28_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_28_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_29_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_29_Output 1 "High" 0 "Low" ;
+VAL_ 2147536919 DTSDO_Channel_30_Output_Enable 1 "True" 0 "False" ;
+VAL_ 2147536919 DTSDO_Channel_30_Output 1 "High" 0 "Low" ;
+

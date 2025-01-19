@@ -1,0 +1,117 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ao_ch10 : 0|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+
+BO_ 2147483905 ao: 8 Vector__XXX
+ SG_ ao_ch0 m0 : 0|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch1 m0 : 16|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch10 m8 : 32|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch11 m8 : 48|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch12 m12 : 0|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch13 m12 : 16|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch14 m12 : 32|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch15 m12 : 48|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch2 m0 : 32|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch3 m0 : 48|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch4 m4 : 0|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch5 m4 : 16|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch6 m4 : 32|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch7 m4 : 48|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch8 m8 : 0|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ao_ch9 m8 : 16|12@1+ (0.00402832,0) [0|16.4959704] "" Vector__XXX
+ SG_ ch_num M : 12|4@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 2147483939 do: 8 Vector__XXX
+ SG_ do_0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_1 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_10 : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_11 : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_12 : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_13 : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_14 : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_15 : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_16 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_17 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_18 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_19 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_2 : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_20 : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_21 : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_22 : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_23 : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_24 : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_25 : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_26 : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_27 : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_28 : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_29 : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_3 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_4 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_5 : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_6 : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_7 : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_8 : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ do_9 : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","CyclicIfActive","SpontanWithDelay","CyclicAndSpontan","CyclicAndSpontanWithDelay";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 0;
+BA_DEF_DEF_  "DBName" "Cluster";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "DBName" "Cluster";
+BA_ "GenMsgSendType" BO_ 2147483905 1;
+BA_ "VFrameFormat" BO_ 2147483905 1;
+BA_ "GenMsgSendType" BO_ 2147483939 1;
+BA_ "VFrameFormat" BO_ 2147483939 1;
+BA_ "GenSigStartValue" SG_ 2147483905 ao_ch6 0;
+BA_ "GenSigStartValue" SG_ 2147483905 ao_ch7 0;
+

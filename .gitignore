@@ -158,14 +158,14 @@ cython_debug/
 .git
 
 # SDB database files
-*.dbc
-*.ldf
-*.xml
-*.arxml
-dbc*/
-ldf*/
-xml*/
-arxml*/
+# *.dbc
+# *.ldf
+# *.xml
+# *.arxml
+# dbc*/
+# ldf*/
+# xml*/
+# arxml*/
 *.iml
 *.asc
 *.blf

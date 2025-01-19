@@ -10,7 +10,7 @@ from jidutest_can.canapp import CanLogManager
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
  
-DO_DBC = r"/root/dading/jidutest-can/test_smartvci/resources/DTSDO_C01_B05.dbc"
+DO_DBC = r"test/test_smartvci/resources/DTSDO_C01_B05.dbc"
 
 # 接受CAN裸数据（仅供参考）
 def write_do_by_message(message, channel=1):  
