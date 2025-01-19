@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 @MainParser.RegisterSubparser("send-sgn", [
-    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun"]},
+    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun", "smartvci"]},
     {"arg_name": "channel", "type": int, "help": "CAN device channel, eg: 1"},
     {"arg_name": "db_path", "type": str, "help": "CAN database file path, eg: XXX.dbc"},
     {"arg_name": "signal_list", "type": str, "help": "CAN signal list, eg: n1=v1 n2=v2", "nargs": "+"},
@@ -62,7 +62,7 @@ def can_send_sgn(args: argparse.Namespace) -> None:
 
 
 @MainParser.RegisterSubparser("recv-sgn", [
-    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun"]},
+    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun", "smartvci"]},
     {"arg_name": "channel", "type": int, "help": "CAN device channel, eg: 2"},
     {"arg_name": "db_path", "type": str, "help": "CAN database file path, eg: XXX.dbc"},
     {"arg_name": "signal_list", "type": str, "help": "CAN signal list, eg: n1 n2", "nargs": "+"},

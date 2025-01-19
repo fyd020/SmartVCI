@@ -763,13 +763,13 @@ class SmartVCIBus(BusABC):
             return None
 
 
-class PcanError(CanError):
+class SmartVCIError(CanError):
     """A generic error on a PCAN bus."""
 
 
-class PcanCanOperationError(CanOperationError, PcanError):
+class SmartVCIOperationError(CanOperationError, SmartVCIError):
     """Like :class:`can.exceptions.CanOperationError`, but specific to Pcan."""
 
 
-class PcanCanInitializationError(CanInitializationError, PcanError):
+class SmartVCICanInitializationError(CanInitializationError, SmartVCIError):
     """Like :class:`can.exceptions.CanInitializationError`, but specific to Pcan."""

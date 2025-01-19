@@ -205,17 +205,18 @@ def show_dev() -> typing.List:
             can_devices.append(new_line)
         prog.kill()
         prog.wait()
-    try:
-        can_bus = ToSunBus(interface="tosun", show=True)
-    except CanInitializationError as ex:
-        sys.exit(ex)
-    for i in can_bus.device_info:
-        single_device_info = (rgb_green('Manufacturer') + ': ' + rgb_blue(f'{i[0]:<30}') +
-                              rgb_green('Product') + ': ' + rgb_blue(f'{i[1]:<30}') +
-                              rgb_green('Serial') + ': ' + rgb_blue(f'{i[2]:<30}\n')
-                              )
-        for channel in i[3]:
-            line = rgb_green('Channel') + ': ' + rgb_blue(f'{channel:<10}' + single_device_info)
-            sys.stdout.write(line)
-            can_devices.append(line)
+        print(f'can_devices:{can_devices}')
+    # try:
+    #     can_bus = CanBus(interface="smartvci", show=True)
+    # except CanInitializationError as ex:
+    #     sys.exit(ex)
+    # for i in can_bus.device_info:
+    #     single_device_info = (rgb_green('Manufacturer') + ': ' + rgb_blue(f'{i[0]:<30}') +
+    #                           rgb_green('Product') + ': ' + rgb_blue(f'{i[1]:<30}') +
+    #                           rgb_green('Serial') + ': ' + rgb_blue(f'{i[2]:<30}\n')
+    #                           )
+    #     for channel in i[3]:
+    #         line = rgb_green('Channel') + ': ' + rgb_blue(f'{channel:<10}' + single_device_info)
+    #         sys.stdout.write(line)
+    #         can_devices.append(line)
     return can_devices

@@ -612,7 +612,7 @@ class SmartVCIBasic:
             # try:
             #     self.__m_dllBasic = cdll.LoadLibrary("libpcanbasic.so")
             # except OSError:
-            dll_path = libc_path / "smartvci" / "linux" / "SmartVCI.dll"
+            dll_path = libc_path / "smartvci" / "linux" / "SmartVCI.so"
             self.__m_dllBasic = cdll.LoadLibrary(str(dll_path))
         # elif platform.system() == "Darwin":
         #     self.__m_dllBasic = cdll.LoadLibrary(find_library("libPCBUSB.dylib"))

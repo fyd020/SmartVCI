@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 @MainParser.RegisterSubparser("log-data", [
-    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun"]},
+    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun", "smartvci"]},
     {"arg_name": "channel", "type": int, "help": "CAN device channel, eg: 1"},
     {"arg_name": "filename", "type": str, "help": "The name/path of file to log data"},
     {"arg_name": "id_list", "type": str, "help": "CAN id list, eg: 0x123 0x234", "nargs": "*"},

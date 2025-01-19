@@ -1673,7 +1673,7 @@ def _load_messages(tokens,
     
     def get_is_fd(bus_name):
         is_fd = False
-        if "FD" in bus_name:
+        if bus_name and "FD" in bus_name:
             is_fd = True
         return is_fd      
 

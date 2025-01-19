@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 
 class CanController(object):
     
-    INTERFACES = ["pcan", "tosun"]
+    INTERFACES = ["pcan", "tosun", "smartvci"]
 
     def __init__(self,
                  name: str,
@@ -149,6 +149,8 @@ class CanController(object):
                         self.__bus = CanBus(interface=self.__interface, channel=self.__channel, bitrate=baudrate)
                     elif self.__interface == "tosun":
                         self.__bus = CanBus(interface=self.__interface, channel=self.__channel, bitrate=baudrate)
+                    elif self.__interface == "smartvci":
+                        self.__bus = CanBus(interface=self.__interface, channel=self.__channel, bitrate=baudrate)
                 else:
                     if self.__interface == "pcan":
                         if baudrate == 5*10**5 and fd_baudrate == 5*10**6:
@@ -159,6 +161,12 @@ class CanController(object):
                     elif self.__interface == "tosun":
                         self.__bus = CanBus(interface=self.__interface, channel=self.__channel, bitrate=baudrate,
                                             fd=True)
+                    elif self.__interface == "smartvci":
+                        if baudrate == 5*10**5 and fd_baudrate == 5*10**6:
+                            fd_bit_timing = PCANFD_500000_5000000
+                        else:
+                            fd_bit_timing = PCANFD_500000_2000000
+                        self.__bus = CanBus(interface=self.__interface, channel=self.__channel, timing=fd_bit_timing)
             except CanInterfaceNotImplementedError as ex:
                 raise CanInterfaceNotImplementedError(f"Vendor product ID {self.__interface} is not supported."
                                                       f"Because {ex}")
@@ -267,6 +275,7 @@ class CanController(object):
                            *messages: dict,
                            is_fd: bool = False,
                            is_extended_frame: bool = False,
+                           is_remote_frame: bool = False,
                            **kwargs: Any
                            ) -> None:
         """
@@ -296,7 +305,7 @@ class CanController(object):
                 raw_message = RawMessage(arbitration_id=can_id,
                                          is_rx=False,
                                          channel=self.bus.channel_info,
-                                         is_remote_frame=False,
+                                         is_remote_frame=is_remote_frame,
                                          is_fd=self.__bus.fd and is_fd,
                                          is_extended_id=is_extended_frame,
                                          data=data)
@@ -307,6 +316,7 @@ class CanController(object):
                       *messages: dict,
                       is_fd: bool = False,
                       is_extended_frame: bool = False,
+                      is_remote_frame: bool = False,
                       cycle_time: float = None,
                       **kwargs: Any
                       ) -> None:
@@ -346,7 +356,7 @@ class CanController(object):
                 raw_message = RawMessage(arbitration_id=can_id,
                                          is_rx=False,
                                          channel=self.bus.channel_info,
-                                         is_remote_frame=False,
+                                         is_remote_frame=is_remote_frame,
                                          is_fd=self.__bus.fd and is_fd,
                                          is_extended_id=is_extended_frame,
                                          data=data)

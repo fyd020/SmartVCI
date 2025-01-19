@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 
 @MainParser.RegisterSubparser("send-msg", [
-    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun"]},
+    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun", "smartvci"]},
     {"arg_name": "channel", "type": str, "help": "CAN device channel, eg: 1"},
     {"arg_name": "message_list", "type": str,
      "help": "CAN message, data frame eg: 0x123=11:22:33:44:55, remote frame eg: 0x123R", "nargs": "+"},
@@ -120,7 +120,7 @@ def send_msg(args: argparse.Namespace) -> None:
 
 
 @MainParser.RegisterSubparser("recv-msg", [
-    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun"]},
+    {"arg_name": "interface", "type": str, "help": "CAN device vendor id, eg: pcan", "choices": ["pcan", "tosun", "smartvci"]},
     {"arg_name": "channel", "type": int, "help": "CAN device channel, eg: 2"},
     {"arg_name": "id_list", "type": str, "help": "CAN id list, eg: 0x123 0x234", "nargs": "*"},
     {"arg_name": "--fd", "type": int, "help": "CAN channel type, 0: CAN, 1: CANFD", "default": 0, "choices": [0, 1]},

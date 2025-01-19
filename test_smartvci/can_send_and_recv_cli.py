@@ -6,11 +6,11 @@ def test_send_message():
     arg = argparse.Namespace(
         interface="smartvci",
         channel=1,
-        message_list=["0x123=11:22:33"],
-        fd=1,
+        message_list=["0x202R"], # 0xd013=00:FF:00:00:FF:FF:00:00
+        fd=0,
         bitrate=500,
-        interval=100,
-        duration=None,
+        interval=1000,
+        duration=3, 
         debug=1,
         catch_exc=1
     )
@@ -21,10 +21,10 @@ def test_recv_message():
     arg = argparse.Namespace(
         interface="smartvci",
         channel=1,
-        id_list=["0x123"],
+        id_list=["0x101"], # AI "0xa111" DI "0xd112"
         fd=0,
         bitrate=500,
-        duration=None,
+        duration=10,
         debug=1,
         catch_exc=1
     )

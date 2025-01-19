@@ -19,8 +19,8 @@ def listen_bus_data():
     # 1: 控制器使用的硬件设备通道号（1, 2, ... , 16）
     # 可以传dbc文件路径或者自己实例化好的bus，但是以传入的dbc优先级最高
     # 实例化一个bus
-    bus1 = CanBus(interface="pcan", channel=1, fd=True, **PCANFD_500000_2000000)
-    bus2 = CanBus(interface="pcan", channel=2, fd=True, **PCANFD_500000_2000000)
+    bus1 = CanBus(interface="smartvci", channel=1, fd=True, **PCANFD_500000_2000000)
+    bus2 = CanBus(interface="smartvci", channel=2, fd=True, **PCANFD_500000_2000000)
     receiver = CanController(
         "BodyCAN",
         "pcan", 

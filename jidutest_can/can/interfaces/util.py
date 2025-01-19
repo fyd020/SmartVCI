@@ -12,6 +12,7 @@ BACKENDS: Dict[str, Tuple[str, ...]] = {
     "socketcan": ("jidutest_can.can.interfaces.socketcan", "SocketcanBus"),
     "virtual": ("jidutest_can.can.interfaces.virtual", "VirtualBus"),
     "tosun": ("jidutest_can.can.interfaces.tosun", "ToSunBus"),
+    "smartvci": ("jidutest_can.can.interfaces.smartvci", "SmartVCIBus"),
 }
 
 if sys.version_info >= (3, 8):
