@@ -22,8 +22,8 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-homepage = "https://jidudev.com/ee/jidutest/jidutest-sdk/jidutest-can/-/tree/master"
-repository = "https://jidudev.com/ee/jidutest/jidutest-sdk/jidutest-can.git"
+homepage = "https://github.com/fyd020/SmartVCI.git"
+repository = "https://github.com/fyd020/SmartVCI.git"
 # documentation = ""
 # changelog = ""
 
